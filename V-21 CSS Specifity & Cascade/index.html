@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-21 CSS Specifity & Cascade</title>
+</head>
+<style>
+    h1 {
+        color: aqua;
+    }
+    h1.yellow {
+        color: yellow;
+    }
+    .cred {
+        color: red;
+    }
+    .cpurple {
+        color: purple !important;
+    }
+   [data-x=a] {
+        background-color: pink;
+    }
+    /* a.harryclass.akash-class[href]:hover {
+        color: green;
+    }
+    the specificity of the above selector is 1 + 10 + 10 + 10 + 10 = 41 */
+</style>
+<body>
+    <div>
+        <!-- priority: inline > id > class or attribute> element > universal
+        universal selector has the lowest priority:0
+        element selector has the priority:1
+        class or attribute selector has the priority:10
+        id selector has the priority:100
+        inline style has the highest priority:1000
+        !important has the highest priority -->
+        <h1 style="color: aqua;" class="yellow cred cpurple" data-x="a">
+            CSS Specificity
+        </h1>
+    </div>
+</body>
+</html>

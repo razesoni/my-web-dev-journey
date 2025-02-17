@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-22 CSS Sizing Untis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width:480px; */
+            width: 80vw;
+            margin: 0 auto;
+            height: 10vh;
+            background-color: lightblue;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 480px; */
+            width: 80vw;
+            margin: 23px auto;
+            /* height: 80vh; */
+            /* font-size: 18px; */
+            background-color: lightcoral;
+        }
+
+        .container > div {
+            font-size: 1.2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .container > div > div {
+            border: 2px solid green;
+            width: 50%;
+        }
+
+        .mycont {
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmax;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni repudiandae totam expedita debitis
+            officiis, tenetur, laudantium corrupti molestias, neque inventore? Iste sit facere incidunt illum. Ipsa
+            accusamus nisi dolorum?
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, quas unde? Dicta fuga doloremque quas
+                minus consequuntur qui eum autem explicabo? Dolorum provident iste molestias veniam repellat
+                voluptatibus facilis quo.
+            </div>
+        </div>
+
+     
+    </div>
+    <div class="mycont">
+        this is my container
+    </div>
+</body>
+
+</html>
