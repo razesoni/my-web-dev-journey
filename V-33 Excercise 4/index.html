@@ -1,0 +1,72 @@
+<!--Create a multicolor website which can change color using CSS Variables  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise-4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* :root{
+        --primary-color : red;
+        --text-color : white;
+        --secondary-color : rgb(224, 127, 127);
+    } */
+
+        /* :root{
+        --primary-color : rgb(207, 23, 167);
+        --text-color : white;
+        --secondary-color : rgb(224, 127, 182);
+    }  */
+
+        :root {
+            --primary-color: rgb(144, 21, 211);
+            --text-color: white;
+            --secondary-color: rgb(182, 127, 224);
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins';
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bold;
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Service</li></a>
+                <li><a href="/">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

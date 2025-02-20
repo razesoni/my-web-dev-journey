@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .cards :nth-child(3) {
+            background-color: aqua;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img width="160" src="https://www.wallpics.net/wp-content/uploads/2017/07/amazing-nature-wallpaper-10047797.jpg"
+            alt="nature image">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, distinctio repellendus? Rem totam
+                recusandae hic ullam.
+            </p>
+        </div>
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat dolor non accusantium culpa
+            repudiandae perspiciatis possimus ducimus corrupti aperiam rerum eaque repellat repellendus obcaecati
+            inventore esse quam, temporibus, excepturi odio illum veniam qui fugit?</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
