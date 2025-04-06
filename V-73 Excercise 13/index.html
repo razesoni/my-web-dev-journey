@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 13</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .card {
+            display: flex;
+            border: 2px solid white;
+            background-color: rgb(30, 29, 29);
+            color: white;
+            width: 1000px;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .image img {
+            width: 230px;
+            padding: 2px;
+        }
+        .image{
+            position: relative;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 9px;
+            right: 7px;
+            opacity: 0.9;
+            z-index: 10;
+            background-color: rgb(70, 68, 68);
+            color: white;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .text h1 {
+            padding: 4px;
+            font-size: 24px;
+        }
+
+        .text p {
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/9JaDBYPmiJ0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDUUhJPpVHG3CuE1RjKX3Z3q4gF2Q"
+                    alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>JavaScript Callbacks & Promises | Sigma Web Development Course - Tutorial #75</h1>
+                <p>CodewithHarry . 727K views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
