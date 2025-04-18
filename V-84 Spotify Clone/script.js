@@ -3,7 +3,7 @@ let currfolder;
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/V-84%20Spotify%20Clone/${folder}/`);
+    let a = await fetch(`http://127.0.0.1:3002/V-84%20Spotify%20Clone/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -41,7 +41,7 @@ async function getsongs(folder) {
 }
 
 const playMusic = (track, pause = false) => {
-    currentsong.src = `http://127.0.0.1:3000/V-84%20Spotify%20Clone/${currfolder}/${track}`; // Ensure the correct path
+    currentsong.src = `http://127.0.0.1:3002/V-84%20Spotify%20Clone/${currfolder}/${track}`; // Ensure the correct path
     if (!pause) {
         currentsong.play();
         play.src = "img/pause.svg";
@@ -51,7 +51,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:3000/V-84%20Spotify%20Clone/song/`);
+    let a = await fetch(`http://127.0.0.1:3002/V-84%20Spotify%20Clone/song/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -62,7 +62,7 @@ async function displayAlbums() {
         const e = array[index];
     if (e.href.includes("/song")) {
         let folder = e.href.split("/").slice(-2)[0];
-        let a = await fetch(`http://127.0.0.1:3000/V-84%20Spotify%20Clone/song/${folder}/info.json`);
+        let a = await fetch(`http://127.0.0.1:3002/V-84%20Spotify%20Clone/song/${folder}/info.json`);
         let response = await a.json();
         cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
                         <div class="play">
@@ -71,7 +71,7 @@ async function displayAlbums() {
                                 <polygon points="40,30 70,50 40,70" fill="black"/>
                               </svg>
                         </div>
-                        <img src="http://127.0.0.1:3000/V-84%20Spotify%20Clone/song/${folder}/cover.jpg" alt="">
+                        <img src="http://127.0.0.1:3002/V-84%20Spotify%20Clone/song/${folder}/cover.jpg" alt="">
                         <h2>${response.title}</h2>
                         <p>${response.description}</p>
                     </div>`
